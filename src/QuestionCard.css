@@ -39,6 +39,8 @@
   font-size: 20px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
+
+  -webkit-tap-highlight-color: #6aaa64ae;
 }
 
 @media (hover: hover) {
