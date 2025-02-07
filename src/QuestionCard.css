@@ -20,8 +20,8 @@
 }
 
 .option-btn {
-  background: #fd3a4a;
-  border: none;
+  background: #6aaa64;
+  border: none;;
   border-radius: 8px;
   padding: 1em;
   color: #fff;
@@ -31,7 +31,7 @@
 }
 
 .option-btn:hover {
-  background: #ff4655;
+  background: #6aaa64;
   transform: scale(1.05);
 }
 
