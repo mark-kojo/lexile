@@ -1,24 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './QuestionCard.css';
 
 function QuestionCard({ question, onAnswerSelected, reviewMode, onExitReviewQuestion }) {
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const handleAnswerClick = (option) => {
-    // Prevent multiple clicks during the animation.
-    if (isAnimating || reviewMode) return;
-
-    setIsAnimating(true);
-
-    // Optionally, you can add an extra CSS class here to trigger a manual animation.
-    // But if you're using :active to animate, the user will see the effect when they tap.
-
-    // Delay the callback until after the animation has finished.
-    setTimeout(() => {
-      onAnswerSelected && onAnswerSelected(option);
-    }, 400); // 200ms delay – adjust to match your CSS animation duration
-  };
-
   return (
     <div className="question-card">
       {reviewMode && (
@@ -38,30 +21,30 @@ function QuestionCard({ question, onAnswerSelected, reviewMode, onExitReviewQues
       ></h2>
       <div className="options">
         <button
-          onClick={() => handleAnswerClick('A')}
+          onClick={() => onAnswerSelected && onAnswerSelected('A')}
           className="option-btn"
-          disabled={reviewMode || isAnimating}
+          disabled={reviewMode}
         >
           {question.optionA}
         </button>
         <button
-          onClick={() => handleAnswerClick('B')}
+          onClick={() => onAnswerSelected && onAnswerSelected('B')}
           className="option-btn"
-          disabled={reviewMode || isAnimating}
+          disabled={reviewMode}
         >
           {question.optionB}
         </button>
         <button
-          onClick={() => handleAnswerClick('C')}
+          onClick={() => onAnswerSelected && onAnswerSelected('C')}
           className="option-btn"
-          disabled={reviewMode || isAnimating}
+          disabled={reviewMode}
         >
           {question.optionC}
         </button>
         <button
-          onClick={() => handleAnswerClick('D')}
+          onClick={() => onAnswerSelected && onAnswerSelected('D')}
           className="option-btn"
-          disabled={reviewMode || isAnimating}
+          disabled={reviewMode}
         >
           {question.optionD}
         </button>
