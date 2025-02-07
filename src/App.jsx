@@ -12,18 +12,9 @@ function App() {
 
   // Fetch and parse the CSV file when the component mounts
   useEffect(() => {
-    fetch('/questions.csv')
-      .then(response => response.text())
-      .then(data => {
-        Papa.parse(data, {
-          header: true,
-          complete: (results) => {
-            // Filter out any empty rows
-            const parsedQuestions = results.data.filter(q => q.question);
-            setQuestions(parsedQuestions);
-          }
-        });
-      });
+    fetch('/questions.json')
+      .then(response => response.json())
+      .then(data => setQuestions(data));
   }, []);
 
   const handleAnswerSelected = (selectedOption) => {
