@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Papa from 'papaparse';
 import QuestionCard from './QuestionCard';
 import ProgressBar from './ProgressBar';
 import Review from './Review';
@@ -10,8 +9,10 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
   const [quizCompleted, setQuizCompleted] = useState(false);
+  // New state for when a user chooses to review a specific question.
+  const [reviewingQuestion, setReviewingQuestion] = useState(false);
+  const [reviewQuestionIndex, setReviewQuestionIndex] = useState(null);
 
-  // Fetch and parse the JSON file on mount
   useEffect(() => {
     fetch('/questions.json')
       .then((response) => response.json())
@@ -23,7 +24,7 @@ function App() {
   const handleAnswerSelected = (selectedOption) => {
     const currentQuestion = questions[currentIndex];
 
-    // Record the user's answer
+    // Record the user's answer.
     setUserAnswers((prevAnswers) => [
       ...prevAnswers,
       { question: currentQuestion, selected: selectedOption }
@@ -34,6 +35,24 @@ function App() {
     } else {
       setQuizCompleted(true);
     }
+  };
+
+  // When a "View Question" link is clicked in the review list.
+  const handleReviewQuestion = (index) => {
+    setReviewQuestionIndex(index);
+    setReviewingQuestion(true);
+  };
+
+  // Called from the review question view to return to the review list.
+  const handleExitReviewQuestion = () => {
+    setReviewingQuestion(false);
+  };
+
+  // (Optional) A back button in the review list to go back to the quiz view.
+  // In this example, we'll let the user return to the quiz at the last answered question.
+  const handleExitReview = () => {
+    // For example, resume the quiz at the last answered question.
+    setQuizCompleted(false);
   };
 
   if (questions.length === 0) {
@@ -50,8 +69,20 @@ function App() {
             onAnswerSelected={handleAnswerSelected}
           />
         </>
+      ) : reviewingQuestion ? (
+        // Display a single question in review mode.
+        <QuestionCard
+          question={questions[reviewQuestionIndex]}
+          reviewMode={true}
+          onExitReviewQuestion={handleExitReviewQuestion}
+        />
       ) : (
-        <Review userAnswers={userAnswers} />
+        // Show the review list.
+        <Review
+          userAnswers={userAnswers}
+          onReviewQuestion={handleReviewQuestion}
+          onExitReview={handleExitReview}
+        />
       )}
     </div>
   );

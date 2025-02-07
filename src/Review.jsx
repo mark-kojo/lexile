@@ -1,8 +1,8 @@
 import React from 'react';
 import './Review.css';
 
-function Review({ userAnswers }) {
-  // Helper function to retrieve the full answer text from a question object, given a letter.
+function Review({ userAnswers, onReviewQuestion, onExitReview }) {
+  // Helper function to retrieve the full answer text from a question object given a letter.
   const getAnswerText = (question, letter) => {
     switch (letter) {
       case "A": return question.optionA;
@@ -13,7 +13,7 @@ function Review({ userAnswers }) {
     }
   };
 
-  // Calculate overall score
+  // Calculate overall score.
   const score = userAnswers.filter(
     (answer) => answer.selected === answer.question.correctAnswer
   ).length;
@@ -21,6 +21,7 @@ function Review({ userAnswers }) {
   return (
     <div className="review">
       <h2>Quiz Completed! Your score: {score} / {userAnswers.length}</h2>
+      {/* (Optional) Back button to exit review and return to quiz */}
       <h3>Review Your Answers:</h3>
       {userAnswers.map((answer, index) => {
         const isCorrect = answer.selected === answer.question.correctAnswer;
@@ -47,6 +48,17 @@ function Review({ userAnswers }) {
             )}
             <p className="feedback">
               <strong>Feedback:</strong> {answer.question.feedback}
+            </p>
+            <p>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onReviewQuestion(index);
+                }}
+              >
+                View Question
+              </a>
             </p>
           </div>
         );
