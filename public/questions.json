@@ -5,7 +5,8 @@
     "optionB": "instructions",
     "optionC": "dreams",
     "optionD": "neighbors",
-    "correctAnswer": "A"
+    "correctAnswer": "A",
+    "feedback": "While the passage involves dreams, it's actually an animal's natural instinct that guides caterpillars to spin their cocoons—similar to how birds naturally know how to build nests."
   },
   {
     "question": "Junior knew that being a professional ballplayer was going to take some getting used to. He was here to mature and to improve, and his progress would be gradual. Still, as the weeks went by, the stress began to take its toll. He went into a slump at the plate. It seemed that he could not hit the ball. His batting average fell all the way to .175. For the first time since he'd started playing baseball, he was not having fun. His performance was _____ .",
@@ -13,7 +14,8 @@
     "optionB": "extraordinary",
     "optionC": "unimpressive",
     "optionD": "average",
-    "correctAnswer": "C"
+    "correctAnswer": "C",
+    "feedback": "The details about his slump at the plate and a batting average of .175 indicate that his performance was unimpressive."
   },
   {
     "question": "She carried an armful of grass and climbed up again on the fence. None of the horses noticed her at first. Eventually some of them seemed to smell the grass and came over to where she was perched on the fence. The horses became _____ .",
@@ -21,7 +23,8 @@
     "optionB": "sleek",
     "optionC": "interested",
     "optionD": "fat",
-    "correctAnswer": "C"
+    "correctAnswer": "C",
+    "feedback": "Since the horses approached her after smelling the grass, it’s clear they became interested."
   },
   {
     "question": "I had learned to ride before I could walk, and had grown up intending to be a jockey. But the fates weren't kind: I was six feet tall when I was seventeen, and whatever special something it took to be a racer, I did not have. I was _____ .",
@@ -29,7 +32,8 @@
     "optionB": "careless",
     "optionC": "honorable",
     "optionD": "insensitive",
-    "correctAnswer": "A"
+    "correctAnswer": "A",
+    "feedback": "The narrator’s lifelong dream of being a jockey was dashed by their height, leaving them disappointed."
   },
   {
     "question": "Samuel Adams stood before his friends, his coat frayed, his shoes scuffed, his cotton stockings darned. His friends said nothing about his appearance, but within a few days gifts began arriving at his house: When Samuel Adams left for Philadelphia, he was dressed as a representative of how Massachusetts should be dressed. He was as stylish as his cousin John Adams, or his friend John Hancock, or indeed any of the other representatives. His friends were _____ .",
@@ -37,7 +41,8 @@
     "optionB": "disgraceful",
     "optionC": "misunderstood",
     "optionD": "peaceful",
-    "correctAnswer": "A"
+    "correctAnswer": "A",
+    "feedback": "Samuel Adams’ friends helped him by sending him gifts of new clothes, showing that they were generous."
   },
   {
     "question": "John and Deborah Darnell are specialists in a field they call desert-road archeology. In 1992, they started exploring ancient caravan roads that once led through Egypt's Western Desert. They spent years picking through artifacts. The archeologists studied bits of broken pottery along the roads. They hoped to learn about the cultures of the people who had traveled there. In 2005, the Darnells discovered something huge—the ruins of a city that was more than 3,500 years old! The Darnells' commitment was _____ .",
@@ -45,7 +50,8 @@
     "optionB": "deflated",
     "optionC": "challenged",
     "optionD": "questioned",
-    "correctAnswer": "A"
+    "correctAnswer": "A",
+    "feedback": "Their years of dedicated research were rewarded with the discovery of an ancient city."
   },
   {
     "question": "Robert E. Lee worked as a scout, exploring enemy territory to get information. He also directed the building of bridges that could support heavy army guns being dragged into battle. In the Battle of Veracruz, he helped plan some of the fighting. He was in the thick of the battles for Cerro Gordo and Mexico City. At one point, he was on his horse, riding and fighting, for thirty-six straight hours. Robert E. Lee was a _____ .",
@@ -53,7 +59,8 @@
     "optionB": "lazy soldier",
     "optionC": "procrastinator",
     "optionD": "manipulator",
-    "correctAnswer": "A"
+    "correctAnswer": "A",
+    "feedback": "Lee's role in planning battles, scouting enemy territory, and leading his troops shows that he was a leader."
   },
   {
     "question": "He could pretend that he came to Washington to seek an appointment with his own congressman or senator. He was to keep his eyes and ears open and try, if possible, to learn the position and plans of the Union army. Once he had discovered such information, he was to report back to Longstreet. He was to __________ the Union army's plans.",
@@ -61,7 +68,8 @@
     "optionB": "ignore",
     "optionC": "investigate",
     "optionD": "accept",
-    "correctAnswer": "C"
+    "correctAnswer": "C",
+    "feedback": "The passage indicates that his mission was to gather intelligence, meaning he was to investigate the Union army's plans."
   },
   {
     "question": "Laos is a remote, beautiful land of mist-wrapped mountains with a fertile valley that follows the mighty Mekong River. It is the Mekong that sustains life in this small country, which is about the size of the state of Utah. Most of its people live in the lowland areas along the river banks. The Mekong River is _______ .",
@@ -69,15 +77,17 @@
     "optionB": "disrespected",
     "optionC": "essential",
     "optionD": "polluted",
-    "correctAnswer": "C"
+    "correctAnswer": "C",
+    "feedback": "The passage emphasizes that the Mekong sustains life in Laos, making it essential."
   },
   {
-    "question": "The sky above Pittsburgh was brown. Dirty air hung over the city like a blanket. As Carlos's jet came down, it was hard to see the airport buildings. And it was impossible to see the old church that marked the center of the city or the people who filled the streets. The state of the air above Pittsburgh is _______.",
+    "question": "The sky above Pittsburgh was brown. Dirty air hung over the city like a blanket. As Carlos's jet came down, it was hard to see the airport buildings. And it was impossible to see the old church that marked the center of the city or the people who filled the streets.",
     "optionA": "thin",
     "optionB": "polluted",
     "optionC": "cold",
     "optionD": "bright",
-    "correctAnswer": "B"
+    "correctAnswer": "B",
+    "feedback": "The brown sky and dirty air clearly indicate that the air is polluted."
   },
   {
     "question": "So deep was the affection between them neither flew any place without the other. Together they swooped and darted about. When they guarded their nest, they guarded it together. When the sky grew lavender, and evening cool wrapped its gentle shawl around them, the songs they warbled were the same song, sweet and harmonious. They _____ each other.",
@@ -85,7 +95,8 @@
     "optionB": "suspected",
     "optionC": "publicized",
     "optionD": "criticized",
-    "correctAnswer": "A"
+    "correctAnswer": "A",
+    "feedback": "Their constant companionship and harmonious behavior show that they adored each other."
   },
   {
     "question": "They do allow me to write. Indeed I believe they think my writing is something extraordinary. Each time I take out my notebook and pen, I see looks of approval pass from one to another. They _____________ my writing.",
@@ -93,7 +104,8 @@
     "optionB": "appreciate",
     "optionC": "condemn",
     "optionD": "memorize",
-    "correctAnswer": "B"
+    "correctAnswer": "B",
+    "feedback": "The looks of approval indicate that people appreciate the writing."
   },
   {
     "question": "A control tower called a superstructure is located on the top deck of a battleship. The superstructure contains the bridge. The bridge is a room where the captain controls the ship. A battleship's radar is located in the superstructure. The superstructure is an _____ part of the ship.",
@@ -101,7 +113,8 @@
     "optionB": "ugly",
     "optionC": "elegant",
     "optionD": "immense",
-    "correctAnswer": "A"
+    "correctAnswer": "A",
+    "feedback": "Because it houses the bridge and radar, the superstructure is an important part of the ship."
   },
   {
     "question": "In general, Italians like to buy fresh food each day from small local shops. As a result, Italy has more small grocery stores than any other European country. In recent years, large supermarkets have opened on the outskirts of towns and cities. However, compared to other countries, these are few in number. Local shops are ____________ in Italy.",
@@ -109,7 +122,8 @@
     "optionB": "expensive",
     "optionC": "preferred",
     "optionD": "courteous",
-    "correctAnswer": "C"
+    "correctAnswer": "C",
+    "feedback": "Italians' preference for daily fresh food purchases makes local shops the preferred option."
   },
   {
     "question": "The x-ray picture provides views of mummies never unwrapped---of pharaohs, queens, nobles and priests. The shape of the face appears, as do magic charms of gold and semiprecious stones within the wrappings. The pictures shows that some mummies have been wrongly identified; they cannot be the person they were thought to be. They have helped to clarify family relationships. They have produced some surprises and puzzles. Most of all, they have yielded important information about health in ancient Egypt. By seeing into the bones, medical scientists can determine age at death, signs of disease, and fractures that healed. The x-rays provide __________.",
@@ -117,7 +131,8 @@
     "optionB": "insight",
     "optionC": "anxiety",
     "optionD": "beauty",
-    "correctAnswer": "B"
+    "correctAnswer": "B",
+    "feedback": "X-rays reveal hidden details, providing insight into ancient Egyptian health and identity."
   },
   {
     "question": "I felt like everyone turned and stared. Embarrassed, I pulled Anna into a parking garage nearby. The sound of the rain beating on the pavement faded away once we were inside, and I only heard her screams. I stood between cars, feeling mortified and outraged, like every other mother whose child has a temper tantrum in public. I did not want to be _________ .",
@@ -125,7 +140,8 @@
     "optionB": "observed",
     "optionC": "influenced",
     "optionD": "scared",
-    "correctAnswer": "B"
+    "correctAnswer": "B",
+    "feedback": "The narrator’s discomfort with public attention during a tantrum shows they did not want to be observed."
   },
   {
     "question": "Two businessmen gave Robert the money he needed to make his new machine. In return, they would receive two-thirds of any money that he might make. The three men formed the Union Lasting Machine Company. The men had a(n) _____ .",
@@ -133,7 +149,8 @@
     "optionB": "Agreement",
     "optionC": "Program",
     "optionD": "Contest",
-    "correctAnswer": "B"
+    "correctAnswer": "B",
+    "feedback": "The arrangement where the businessmen receive a share of profits is clearly an agreement."
   },
   {
     "question": "People do not really use music to charm snakes. Snakes have no ears, so the snake can't hear a flute. The snake charmer startles the snake by waving a hand near it. The snake lifts its head to look around. The charmer then sways back and forth or moves the flute. The snake moves its head to keep an eye on the movement. This paragraph mainly tells:",
@@ -141,6 +158,7 @@
     "optionB": "why snakes can't hear sounds",
     "optionC": "how people really charm snakes",
     "optionD": "why snakes have no ears",
-    "correctAnswer": "C"
+    "correctAnswer": "C",
+    "feedback": "The paragraph explains that snake charming relies on movement rather than music, showing how people really charm snakes."
   }
 ]
