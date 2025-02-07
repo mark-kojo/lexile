@@ -41,9 +41,11 @@
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.option-btn:not(:disabled):hover {
-  background: #6aaa64;
-  transform: scale(1.05);
+@media (hover: hover) {
+  .option-btn:not(:disabled):hover {
+    background: #6aaa64;
+    transform: scale(1.02);
+  }
 }
 
 .option-btn:disabled {

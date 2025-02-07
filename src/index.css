@@ -30,6 +30,7 @@ body {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  color:black;
 }
 
 h1 {
@@ -37,6 +38,7 @@ h1 {
   line-height: 1.1;
 }
 
+/* Existing button styles */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -48,23 +50,48 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
+
+/* Apply hover effect on devices that support hover */
+@media (hover: hover) {
+  button:hover {
+    transform: scale(1.1);
+  }
 }
+
+/* Remove hover effect on mobile devices (or any device that doesn't support hover) */
+@media (hover: none) {
+  button:hover {
+    border-color: transparent;
+  }
+}
+
+/* Focus styles remain unchanged */
 button:focus,
 button:focus-visible {
   outline: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Click effect using a keyframes animation */
+button:active {
+  animation: clickAnimation 0.2s ease-out;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
   }
-  a:hover {
-    color: #747bff;
+  50% {
+    transform: scale(0.95); /* Scale down effect */
   }
-  button {
-    background-color: #f9f9f9;
+  100% {
+    transform: scale(1); /* Return to original size */
   }
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
 }

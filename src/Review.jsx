@@ -20,7 +20,8 @@ function Review({ userAnswers, onReviewQuestion, onExitReview }) {
 
   return (
     <div className="review">
-      <h2>Quiz Completed! Your score: {score} / {userAnswers.length}</h2>
+      <h3 className="mb-0">Quiz Completed!</h3>
+      <h2 className="mt-0">Your score: {score} / {userAnswers.length}</h2>
       {/* (Optional) Back button to exit review and return to quiz */}
       <h3>Review Your Answers:</h3>
       {userAnswers.map((answer, index) => {
