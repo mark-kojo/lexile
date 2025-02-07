@@ -30,7 +30,7 @@ function Review({ userAnswers }) {
             className={`review-item ${isCorrect ? "correct-border" : "incorrect-border"}`}
           >
             <p>
-              <strong>Question {index + 1}:</strong> {answer.question.question}
+              <strong>Q{index + 1}:</strong> {answer.question.question}
             </p>
             <p>
               Your answer: {getAnswerText(answer.question, answer.selected)} ({answer.selected}){" "}
@@ -48,7 +48,6 @@ function Review({ userAnswers }) {
             <p className="feedback">
               <strong>Feedback:</strong> {answer.question.feedback}
             </p>
-            <hr />
           </div>
         );
       })}

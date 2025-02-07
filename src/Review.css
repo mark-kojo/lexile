@@ -19,12 +19,12 @@
 
 /* Green border for correct answers */
 .correct-border {
-  border: 2px solid green;
+  background: rgb(228, 244, 233);
 }
 
 /* Red border for incorrect answers */
 .incorrect-border {
-  border: 2px solid red;
+  background: rgb(246, 224, 222);
 }
 
 .correct {
